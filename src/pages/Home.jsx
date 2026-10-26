@@ -117,8 +117,7 @@ export default function Home() {
               <p className="rv-card__tag">{company.tagline}</p>
               <p className="rv-card__address">{company.street}<br />{company.townShort} {company.postcode}</p>
               <p className="rv-card__phones">
-                <a href={telLink(company.phone)}>Tlf: {company.phone}</a>
-                <a href={telLink(company.mobile)}>Mov: {company.mobile}</a>
+                <a href={telLink(company.phone)}>Tlf. y WhatsApp: {company.phone}</a>
               </p>
             </div>
           </div>
@@ -128,7 +127,7 @@ export default function Home() {
             <h2 className="rv-title">Llámanos o <em>escríbenos</em></h2>
             <p className="rv-lead">Las citas las damos por teléfono y por WhatsApp. Te contestamos en cuanto dejamos las tijeras.</p>
             <div className="rv-contact__actions">
-              <WhatsAppButton>WhatsApp · {company.mobile}</WhatsAppButton>
+              <WhatsAppButton>Escribir por WhatsApp</WhatsAppButton>
               <CallButton />
             </div>
 

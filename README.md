@@ -61,7 +61,7 @@ Everything marked `PENDIENTE` in `src/config.js`:
 - **Tax name and NIF** for the legal pages, and an email if they want one shown.
 - **Photos**: all of them are placeholders from [Pexels](https://www.pexels.com/license/). The salon
   has no photos yet, so they need to be taken. Clients who appear in them must give permission.
-- **WhatsApp number**: we assumed the mobile number on the card (686 741 872) is the WhatsApp one.
+- **Phone number**: the site only shows the mobile (686 741 872), used for both calls and WhatsApp. The landline on the card was removed on request.
 - Whether to sell **gift cards or products** (still under discussion).
 
 The legal texts in `src/pages/Legal.jsx` are a template and should be reviewed by the client's advisor.

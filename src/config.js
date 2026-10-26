@@ -18,8 +18,7 @@ export const company = {
   postcode: '12539',
   province: 'Castellón',
   address: 'C/ Jaime Chicharro, 59, 12539 Alquerías del Niño Perdido, Castellón',
-  phone: '964 59 24 03',
-  mobile: '686 741 872',
+  phone: '686 741 872', // móvil: llamadas y WhatsApp
   whatsapp: '+34 686 741 872',
   email: 'hola@rosavidal.example', // PENDIENTE
 };

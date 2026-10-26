@@ -89,8 +89,7 @@ function Footer() {
         </div>
         <div>
           <h2>Cita</h2>
-          <p>Teléfono: <a href={telLink(company.phone)}>{company.phone}</a></p>
-          <p>Móvil y WhatsApp: <a href={telLink(company.mobile)}>{company.mobile}</a></p>
+          <p>Teléfono y WhatsApp: <a href={telLink(company.phone)}>{company.phone}</a></p>
           <p><WhatsAppButton className="rv-footer__wa">Escribir por WhatsApp</WhatsAppButton></p>
         </div>
         <div>
