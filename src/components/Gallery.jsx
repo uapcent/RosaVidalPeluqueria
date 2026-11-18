@@ -6,7 +6,6 @@ import { WhatsAppButton } from './Contact.jsx';
 import Photo from './Photo.jsx';
 
 const PAGE = 12; // photos shown before "Ver más"
-const large = (src) => src.replace(/w=\d+/, 'w=1600');
 const labelOf = Object.fromEntries(categories.map((c) => [c.id, c.label]));
 // "Todos" starts with the photos that are not already in the hero.
 const all = [...trabajos.filter((t) => !t.featured), ...trabajos.filter((t) => t.featured)];
@@ -62,7 +61,7 @@ export default function Gallery() {
         <div className="rv-gallery__grid" key={filter}>
           {visible.map((t, n) => (
             <button key={t.src} type="button" className="rv-gallery__item" onClick={() => setOpen(n)} aria-label={`Ampliar: ${t.caption}`}>
-              <Photo src={t.src} alt={t.caption} className="rv-gallery__img" />
+              <Photo src={t.src} alt={t.caption} className="rv-gallery__img" sizes="(max-width: 760px) 50vw, (max-width: 1200px) 33vw, 380px" />
               <span className="rv-gallery__caption">
                 <small>{labelOf[t.type]}</small>
                 {t.caption}
@@ -83,7 +82,7 @@ export default function Gallery() {
       <dialog ref={ref} className="rv-lightbox" onClose={() => setOpen(null)} onKeyDown={onKeyDown} onClick={(e) => e.target === ref.current && setOpen(null)} aria-label="Foto ampliada">
         {current && (
           <figure>
-            <Photo src={large(current.src)} alt={current.caption} className="rv-lightbox__img" loading="eager" />
+            <Photo src={current.src} alt={current.caption} className="rv-lightbox__img" loading="eager" sizes="(max-width: 760px) 100vw, 75vh" />
             <figcaption>
               <span className="rv-lightbox__text">
                 <small>{labelOf[current.type]} · {open + 1} / {list.length}</small>

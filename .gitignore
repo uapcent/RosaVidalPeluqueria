@@ -2,3 +2,6 @@ node_modules
 dist
 .DS_Store
 *.log
+
+# Fotos originales del salón (sin recortar). Las de la web están en public/trabajos/
+fotos-originales/

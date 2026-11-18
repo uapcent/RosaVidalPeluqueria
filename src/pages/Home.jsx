@@ -30,7 +30,7 @@ export default function Home() {
         <div className="rv-hero__photos">
           {featured.map((t) => (
             <Link key={t.src} to="/#trabajos" className="rv-hero__item">
-              <Photo src={t.src} alt={t.caption} className="rv-hero__img" loading="eager" />
+              <Photo src={t.src} alt={t.caption} className="rv-hero__img" loading="eager" sizes="(max-width: 760px) 72vw, (max-width: 1360px) 25vw, 330px" />
               <span className="rv-hero__caption"><small>{labelOf[t.type]}</small>{t.caption}</span>
             </Link>
           ))}
@@ -94,7 +94,7 @@ export default function Home() {
         <div className="container rv-story__grid">
           <div className="rv-story__photos">
             <Photo src={images.story.src} alt={images.story.alt} className="rv-story__img rv-story__img--big" />
-            <Photo src={images.storySmall.src} alt={images.storySmall.alt} className="rv-story__img rv-story__img--small" />
+            <Photo src={images.storySmall.src} alt={images.storySmall.alt} className="rv-story__img rv-story__img--small" sizes="(max-width: 960px) 46vw, 270px" />
           </div>
           <div className="rv-story__text">
             <p className="rv-eyebrow">Nuestra historia</p>

@@ -6,22 +6,10 @@
 //   confirmar con Rosa antes de publicar (horario, precios, historia, NIF…).
 // ---------------------------------------------------------------
 import { pexels } from './lib/site.js';
+import { company } from './business.js';
 
-export const company = {
-  name: 'Rosa Vidal',
-  tagline: 'Peluquería',
-  legalName: 'Rosa Vidal', // PENDIENTE: nombre fiscal (autónoma o sociedad)
-  nif: '00000000X', // PENDIENTE
-  street: 'C/ Jaime Chicharro, 59',
-  town: 'Alquerías del Niño Perdido',
-  townShort: 'Alquerías N.P.',
-  postcode: '12539',
-  province: 'Castellón',
-  address: 'C/ Jaime Chicharro, 59, 12539 Alquerías del Niño Perdido, Castellón',
-  phone: '686 741 872', // móvil: llamadas y WhatsApp
-  whatsapp: '+34 686 741 872',
-  email: 'hola@rosavidal.example', // PENDIENTE
-};
+// Datos del negocio, horario, dominio y ficha de Google: business.js
+export { company, hours, seo } from './business.js';
 
 // Mensajes que aparecen ya escritos al abrir WhatsApp.
 export const whatsappText = {
@@ -30,16 +18,6 @@ export const whatsappText = {
   photo: (caption) => `Hola Rosa, he visto en la web el trabajo "${caption}" y me gustaría algo parecido.`,
 };
 
-// Horario semanal. 0 = domingo. [] = cerrado.  PENDIENTE: confirmar.
-export const hours = {
-  0: [],
-  1: [],
-  2: [['09:00', '13:30'], ['16:00', '20:00']],
-  3: [['09:00', '13:30'], ['16:00', '20:00']],
-  4: [['09:00', '13:30'], ['16:00', '20:00']],
-  5: [['09:00', '20:00']],
-  6: [['08:30', '14:00']],
-};
 export const hoursNote = 'Para bodas y comuniones abrimos también fuera de horario: pregúntanos.'; // PENDIENTE: confirmar
 
 // Servicios con precio "desde", porque varía según el largo y el trabajo.  PENDIENTE: precios reales.
@@ -94,8 +72,9 @@ export const story = {
 };
 
 export const images = {
-  story: { src: pexels(10318040, 1000), alt: 'Rosa rizando una melena castaña con la tenacilla' },
-  storySmall: { src: pexels(3065096, 700), alt: 'Recogido sujeto con horquillas decoradas' },
+  story: { src: pexels(10318040, 1000), alt: 'Rizando una melena castaña con la tenacilla' },
+  // story sigue siendo de ejemplo (Pexels) hasta tener una foto de Rosa trabajando.
+  storySmall: { src: `${import.meta.env.BASE_URL}trabajos/fallera-aderezo-lateral.jpg`, alt: 'Recogido de fallera con aderezo dorado' },
 };
 
 // Texto de la política de privacidad: para qué se usan los datos.

@@ -1,5 +1,5 @@
-// Photos are loaded from Pexels (free to use, no attribution required:
-// https://www.pexels.com/license/) until the salon has its own.
+// Placeholder photos from Pexels (free to use, no attribution required:
+// https://www.pexels.com/license/). Only the big "Nuestra historia" photo still uses one.
 export const pexels = (id, width = 1600) =>
   `https://images.pexels.com/photos/${id}/pexels-photo-${id}.jpeg?auto=compress&cs=tinysrgb&w=${width}`;
 
