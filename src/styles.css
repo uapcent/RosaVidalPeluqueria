@@ -37,7 +37,7 @@ em { font-style: italic; color: var(--accent); }
 .photo-fallback { background: var(--blush); }
 
 .rv-eyebrow { margin: 0 0 14px; font: 500 12px/1.4 var(--font-body); letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
-.rv-title { font-size: clamp(38px, 5vw, 62px); line-height: 1.02; margin-bottom: 22px; }
+.rv-title { font-size: clamp(38px, 5vw, 50px); line-height: 1.02; margin-bottom: 22px; }
 .rv-lead { font: 500 23px/1.4 var(--font-head); color: var(--ink); }
 
 /* ---------- Buttons ---------- */

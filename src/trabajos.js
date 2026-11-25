@@ -25,15 +25,15 @@ export const categories = [
 
 export const trabajos = [
   { src: foto('fallera-peinetas-oro.jpg'), type: 'recogidos', caption: 'Recogido de fallera con agujas doradas', featured: true },
-  { src: foto('rizos-pamela.jpg'), type: 'ondas', caption: 'Rizos cortos con pamela de invitada', featured: true },
+  // { src: foto('rizos-pamela.jpg'), type: 'ondas', caption: 'Rizos cortos con pamela de invitada', featured: true },
   { src: foto('recogido-romantico-perlas.jpg'), type: 'recogidos', caption: 'Recogido romántico con horquilla de perlas', featured: true },
   { src: foto('color-turquesa.jpg'), type: 'color', caption: 'Color turquesa en media melena', featured: true },
   { src: foto('coleta-alta-ondas.jpg'), type: 'coletas', caption: 'Coleta alta con ondas' },
   { src: foto('ondas-vintage.jpg'), type: 'ondas', caption: 'Ondas vintage en rubio' },
   { src: foto('mechon-platino.jpg'), type: 'color', caption: 'Mechón platino delantero' },
-  { src: foto('mono-trenzado-perlas.jpg'), type: 'recogidos', caption: 'Moño trenzado con perlas' },
+  { src: foto('mono-trenzado-perlas.jpg'), type: 'recogidos', caption: 'Moño trenzado con perlas'},
   { src: foto('trenza-espiga.jpg'), type: 'coletas', caption: 'Trenza de espiga deshecha' },
-  { src: foto('semirrecogido-hoja-dorada.jpg'), type: 'ondas', caption: 'Semirrecogido con hoja dorada' },
+  { src: foto('semirrecogido-hoja-dorada.jpg'), type: 'ondas', caption: 'Semirrecogido con hoja dorada', featured: true },
   { src: foto('mantilla-negra.jpg'), type: 'recogidos', caption: 'Mantilla de encaje negro' },
   { src: foto('color-magenta.jpg'), type: 'color', caption: 'Color magenta en melena larga' },
   { src: foto('recogido-deshecho.jpg'), type: 'recogidos', caption: 'Recogido bajo deshecho' },

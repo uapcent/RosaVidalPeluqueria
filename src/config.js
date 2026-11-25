@@ -60,14 +60,23 @@ export const eventSteps = [
 
 // Historia y proyección del salón.  PENDIENTE: completar con datos reales (año de apertura, etc.).
 export const story = {
-  title: 'Una peluquería de pueblo, de las de siempre',
+  title: 'Nuestra historia: Tradición desde 1966 y pasión por las nuevas tendencias',
+
   paragraphs: [
-    'Rosa Vidal es una peluquería pequeña en Alquerías del Niño Perdido. Aquí nos conocemos casi todos: muchas clientas vienen desde hace años, y ahora traen a sus hijas.',
-    'Con el tiempo, los peinados de evento se han convertido en lo que más nos gusta hacer. Bodas, comuniones y fiestas del pueblo: cada uno lo preparamos con la misma atención, como si fuera el nuestro.',
+    'Bienvenidos a nuestro salón, donde el cuidado del cabello combina historia, experiencia y pasión por las nuevas tendencias.',
+
+    'Mi historia entre tijeras, peines y secadores comenzó en 1966, cuando mi madre abrió esta peluquería con un sueño: ofrecer un trato cercano y un trabajo impecable. Crecí viendo su dedicación y aprendiendo que escuchar a cada cliente es tan importante como conseguir un buen corte o peinado.',
+
+    'Hoy, como peluquera de segunda generación, me enorgullece mantener vivo ese legado familiar. Conservo la esencia de la peluquería tradicional, basada en el mimo, la atención personalizada y la confianza, incorporando mi propia visión y formación continua.',
+
+    'Me he especializado en las últimas técnicas de corte, coloración y cuidado capilar. Me apasiona seguir aprendiendo para ofrecerte las nuevas tendencias, siempre adaptadas a tu estilo, tus facciones y la salud de tu cabello.',
+
+    'Tanto si buscas un corte clásico como si quieres atreverte con un cambio de look, aquí encontrarás la experiencia de toda una vida combinada con la frescura de hoy.',
   ],
+
   future: {
-    title: 'Lo que viene',
-    text: 'Seguimos formándonos en nuevas técnicas de recogidos y color para traerlas al pueblo, sin perder el trato de siempre.',
+    title: 'Te espero en el salón',
+    text: 'Para seguir escribiendo juntos esta historia.',
   },
 };
 

@@ -100,10 +100,10 @@ export default function Home() {
             <p className="rv-eyebrow">Nuestra historia</p>
             <h2 className="rv-title">{story.title}</h2>
             {story.paragraphs.map((p, i) => <p key={i} className={i === 0 ? 'rv-lead' : undefined}>{p}</p>)}
-            <div className="rv-story__future">
-              <h3>{story.future.title}</h3>
-              <p>{story.future.text}</p>
-            </div>
+            {/*<div className="rv-story__future">*/}
+            {/*  <h3>{story.future.title}</h3>*/}
+            {/*  <p>{story.future.text}</p>*/}
+            {/*</div>*/}
           </div>
         </div>
       </section>
